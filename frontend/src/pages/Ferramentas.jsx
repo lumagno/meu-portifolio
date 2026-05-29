@@ -15,11 +15,13 @@ export function Ferramentas() {
         <div style={{ backgroundColor: '#1a1a1a', padding: '30px', borderRadius: '12px', border: '1px solid #333' }}>
           <h3 style={{ color: '#fff', marginBottom: '15px', fontSize: '1.3rem' }}>Back e Front</h3>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}></span>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}></span>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}></span>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}></span>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}></span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>C</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>C#</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>.NET</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>Java</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>React</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>HTML/CSS</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#00A3FF', fontSize: '0.9rem', border: '1px solid #444' }}>JavaScript</span>
           </div>
         </div>
 
@@ -27,8 +29,8 @@ export function Ferramentas() {
         <div style={{ backgroundColor: '#1a1a1a', padding: '30px', borderRadius: '12px', border: '1px solid #333' }}>
           <h3 style={{ color: '#fff', marginBottom: '15px', fontSize: '1.3rem' }}>Banco de dados</h3>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#CCFF00', fontSize: '0.9rem', border: '1px solid #444' }}></span>
-            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#CCFF00', fontSize: '0.9rem', border: '1px solid #444' }}></span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#CCFF00', fontSize: '0.9rem', border: '1px solid #444' }}>MySQL</span>
+            <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#CCFF00', fontSize: '0.9rem', border: '1px solid #444' }}>SQLite</span>
             <span style={{ backgroundColor: '#2a2a2a', padding: '8px 12px', borderRadius: '6px', color: '#CCFF00', fontSize: '0.9rem', border: '1px solid #444' }}></span>
           </div>
         </div>
