@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Força o site a ocupar 100% da largura e altura da tela visível */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212; /* Mantém o fundo escuro consistente */
+  color: #ffffff;
+}

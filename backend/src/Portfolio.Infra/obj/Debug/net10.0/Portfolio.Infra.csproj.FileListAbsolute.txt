@@ -1,0 +1,17 @@
+C:\meu-portifolio\backend\src\Portfolio.Infra\bin\Debug\net10.0\Portfolio.Infra.deps.json
+C:\meu-portifolio\backend\src\Portfolio.Infra\bin\Debug\net10.0\Portfolio.Infra.runtimeconfig.json
+C:\meu-portifolio\backend\src\Portfolio.Infra\bin\Debug\net10.0\Portfolio.Infra.dll
+C:\meu-portifolio\backend\src\Portfolio.Infra\bin\Debug\net10.0\Portfolio.Infra.pdb
+C:\meu-portifolio\backend\src\Portfolio.Infra\bin\Debug\net10.0\Portfolio.Domain.dll
+C:\meu-portifolio\backend\src\Portfolio.Infra\bin\Debug\net10.0\Portfolio.Domain.pdb
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.csproj.AssemblyReference.cache
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.AssemblyInfoInputs.cache
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.AssemblyInfo.cs
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.csproj.CoreCompileInputs.cache
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfoli.E988EA1B.Up2Date
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.dll
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\refint\Portfolio.Infra.dll
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.pdb
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.genruntimeconfig.cache
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\ref\Portfolio.Infra.dll
