@@ -15,3 +15,4 @@ C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\refint\Portfolio
 C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.pdb
 C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.genruntimeconfig.cache
 C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\ref\Portfolio.Infra.dll
+C:\meu-portifolio\backend\src\Portfolio.Infra\obj\Debug\net10.0\Portfolio.Infra.sourcelink.json

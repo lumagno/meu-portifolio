@@ -5,36 +5,36 @@ export function Projetos() {
   const [projetos, setProjetos] = useState([
     {
       id: 1,
-      titulo: "API Gestão de Funcionários",
-      descricao: "Sistema backend de gerenciamento e controle, focado na arquitetura de endpoints isolados e integração direta com banco de dados relacional.",
-      tecnologias: "C#, .NET, Entity Framework Core, SQLite",
-      linkRepo: "https://github.com/seu-usuario/gestao-funcionarios",
+      titulo: "ScanPro",
+      descricao: ("Aplicativo Android desenvolvido em Kotlin para controle de inventário. O projeto tem como objetivo facilitar o cadastro, a consulta e o gerenciamento de produtos em estoque, com suporte à leitura de códigos de barras via câmera do dispositivo."),
+      tecnologias: "Kotlin, Room (KTX + KSP), CameraX, ML Kit Barcode Scanning",
+      linkRepo: "https://github.com/lumagno/ScanPro",
       imagemUrl: ""
     },
     {
       id: 2,
-      titulo: "Agenda de Contatos",
-      descricao: "Aplicação estruturada para gerenciamento de dados na memória, focada em conceitos sólidos de Programação Orientada a Objetos e estruturas como ArrayLists.",
-      tecnologias: "Java",
-      linkRepo: "https://github.com/seu-usuario/agenda-java",
+      titulo: "Gerenciamento de Biblioteca",
+      descricao: ("Sistema de Gerenciamento de Biblioteca (LibManager) Este é um sistema desktop completo para gestão de bibliotecas, desenvolvido em Java com interface gráfica Swing. O projeto aplica conceitos fundamentais de Programação Orientada a Objetos (POO), padrões de projeto como Singleton e a arquitetura DAO (Data Access Object) para persistência de dados em memória."),
+      tecnologias: " Java 17, Swing, POO, Singleton, DAO",
+      linkRepo: "https://github.com/lumagno/Gerenciamento-de-Biblioteca",
       imagemUrl: ""
     },
     {
       id: 3,
-      titulo: "Source Engine Troubleshooter",
-      descricao: "Documentação e scripts criados para diagnóstico e resolução de erros de dependência (como o clássico Error 126) em motores de jogos.",
-      tecnologias: "Source Engine, Debugging, Scripts",
-      linkRepo: "https://github.com/seu-usuario/source-fixes",
+      titulo: "Cash Flow",
+      descricao: ("Cash Flow Management 💰 Um sistema web simples para gestão de fluxo de caixa desenvolvido em PHP 8+ utilizando o padrão de arquitetura MVC (Model-View-Controller) integrado com uma camada de acesso a dados (DAL - Data Access Layer). Este projeto permite o registo de transações financeiras (entradas e saídas), o cálculo automático do saldo e o registo de novos utilizadores com segurança."),
+      tecnologias: "PHP 8+, MVC, DAL",
+      linkRepo: "https://github.com/lumagno/cash_flow",
       imagemUrl: ""
     },
-    {
+    {/*
       id: 4,
       titulo: "Portfólio Full-Stack",
-      descricao: "Minha vitrine digital desenvolvida do zero, consumindo uma API própria. Interface focada em componentização, hooks e design system moderno escuro.",
+      descricao: ("Minha vitrine digital desenvolvida do zero, consumindo uma API própria. Interface focada em componentização, hooks e design system moderno escuro."),
       tecnologias: "React, Vite, CSS, JavaScript",
-      linkRepo: "https://github.com/seu-usuario/portfolio",
+      linkRepo: "https://github.com/lumagno/portfolio",
       imagemUrl: ""
-    }
+    */}
   ]);
 
   // 1. Criamos a "referência" que vai apontar para a caixa dos projetos
@@ -57,12 +57,12 @@ export function Projetos() {
       
       {/* Cabeçalho com o Título e os Botões alinhados */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px', flexWrap: 'wrap', gap: '20px' }}>
-        <h2 style={{ fontSize: '2.5rem', color: '#00A3FF', margin: 0 }}>
-          Meus <span style={{ color: '#CCFF00' }}>Projetos</span>
+        <h2 style={{ fontSize: '2.5rem', margin: 0 }}>
+          <span style={{ color: '#00A3FF' }}>Projetos</span>
         </h2>
 
         {/* Setas de Navegação */}
-        <div style={{ display: 'flex', gap: '15px' }}>
+        <div className="botoes-carrossel" style={{ display: 'flex', gap: '15px' }}>
           <button 
             onClick={() => rolar('esquerda')}
             style={{ width: '45px', height: '45px', borderRadius: '50%', backgroundColor: '#1a1a1a', border: '1px solid #333', color: '#CCFF00', fontSize: '1.2rem', cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'background 0.2s' }}
@@ -107,8 +107,9 @@ export function Projetos() {
             key={projeto.id} 
             style={{ 
               flex: '0 0 auto', 
-              width: '350px', 
-              scrollSnapAlign: 'start' 
+              width: 'min(85vw, 350px)', // A MÁGICA ESTÁ NESTA LINHA
+              scrollSnapAlign: 'start',
+              display: 'flex'
             }}
           >
             <ProjetoCard projeto={projeto} />

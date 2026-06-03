@@ -9,3 +9,4 @@ C:\meu-portifolio\backend\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domai
 C:\meu-portifolio\backend\src\Portfolio.Domain\obj\Debug\net10.0\refint\Portfolio.Domain.dll
 C:\meu-portifolio\backend\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.pdb
 C:\meu-portifolio\backend\src\Portfolio.Domain\obj\Debug\net10.0\ref\Portfolio.Domain.dll
+C:\meu-portifolio\backend\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.sourcelink.json

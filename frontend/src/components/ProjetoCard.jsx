@@ -1,43 +1,55 @@
 export function ProjetoCard({ projeto }) {
   return (
-    <div style={{ 
-      border: '1px solid #444', 
-      padding: '25px', 
-      borderRadius: '12px', 
+    <div style={{
       backgroundColor: '#1a1a1a',
-      transition: 'transform 0.2s' // Dá um efeitinho suave
+      borderRadius: '12px',
+      border: '1px solid #333',
+      padding: '25px',
+      // As 4 linhas abaixo são a mágica do tamanho igual:
+      display: 'flex',
+      flexDirection: 'column', 
+      width: '100%',
+      height: '100%', 
+      boxSizing: 'border-box',
+      transition: 'transform 0.2s'
     }}>
-      <h2 style={{ color: '#00A3FF', marginTop: 0 }}>{projeto.titulo}</h2>
-      <p style={{ lineHeight: '1.6', color: '#ddd' }}>{projeto.descricao}</p>
       
-      <div style={{ 
-        marginTop: '20px', 
-        padding: '10px 15px', 
-        backgroundColor: '#2a2a2a', 
-        borderRadius: '8px',
-        fontSize: '0.9rem'
-      }}>
-        <strong style={{ color: '#CCFF00' }}>Stack:</strong> {projeto.tecnologias}
-      </div>
+      <h3 style={{ color: '#fff', fontSize: '1.4rem', marginBottom: '10px' }}>
+        {projeto.titulo}
+      </h3>
+      
+      <p style={{ color: '#CCFF00', fontSize: '0.9rem', marginBottom: '15px', fontWeight: 'bold' }}>
+        {projeto.tecnologias}
+      </p>
 
-      {/* Só renderiza o botão se houver um link para o repositório */}
-      {projeto.linkRepo && (
-        <a 
-          href={projeto.linkRepo} 
-          target="_blank" 
-          rel="noreferrer"
-          style={{
-            display: 'inline-block',
-            marginTop: '20px',
-            color: '#fff',
-            textDecoration: 'none',
-            borderBottom: '1px solid #00A3FF',
-            paddingBottom: '2px'
-          }}
-        >
-          Ver no GitHub →
-        </a>
-      )}
+      {/* flexGrow: 1 faz o texto esticar para preencher o espaço vazio, empurrando o botão pro final */}
+      <p style={{ color: '#aaa', fontSize: '1rem', lineHeight: '1.5', flexGrow: 1, marginBottom: '20px', whiteSpace: 'pre-wrap' }}>
+        {projeto.descricao}
+      </p>
+
+      <a
+        href={projeto.linkRepo}
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          display: 'block',
+          padding: '12px',
+          backgroundColor: 'transparent',
+          color: '#00A3FF',
+          textDecoration: 'none',
+          borderRadius: '8px',
+          border: '1px solid #00A3FF',
+          fontWeight: 'bold',
+          textAlign: 'center',
+          transition: 'all 0.2s'
+        }}
+        // Efeito de hover simples no botão
+        onMouseOver={(e) => { e.target.style.backgroundColor = '#00A3FF'; e.target.style.color = '#000'; }}
+        onMouseOut={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#00A3FF'; }}
+      >
+        Ver no GitHub
+      </a>
+      
     </div>
   );
 }
