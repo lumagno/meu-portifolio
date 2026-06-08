@@ -64,17 +64,17 @@ export function Contato() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
             <div style={{ backgroundColor: '#1a1a1a', padding: '20px', borderRadius: '12px', border: '1px solid #333' }}>
               <h3 style={{ color: '#CCFF00', marginBottom: '5px', fontSize: '1.1rem' }}>E-mail</h3>
-              <a href="mailto:josehenriquemagnagna@gmail.com" style={{ color: '#fff', textDecoration: 'none', fontSize: '1rem' }}>josehenriquemagnagna@gmail.com</a>
+              <a href="mailto:luizmagnagnagno@hotmail.com" style={{ color: '#fff', textDecoration: 'none', fontSize: '1rem' }}>luizmagnagnagno@hotmail.com</a>
             </div>
 
             <div style={{ backgroundColor: '#1a1a1a', padding: '20px', borderRadius: '12px', border: '1px solid #333' }}>
               <h3 style={{ color: '#CCFF00', marginBottom: '5px', fontSize: '1.1rem' }}>LinkedIn</h3>
-              <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontSize: '1rem' }}>linkedin.com/in/seu-perfil</a>
+              <a href="https://linkedin.com/in/luizhmagnagnagno" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontSize: '1rem' }}>linkedin.com/in/luizhmagnagnagno</a>
             </div>
 
             <div style={{ backgroundColor: '#1a1a1a', padding: '20px', borderRadius: '12px', border: '1px solid #333' }}>
               <h3 style={{ color: '#CCFF00', marginBottom: '5px', fontSize: '1.1rem' }}>GitHub</h3>
-              <a href="https://github.com/seu-usuario" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontSize: '1rem' }}>github.com/seu-usuario</a>
+              <a href="https://github.com/lumagno/meu-portifolio" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', fontSize: '1rem' }}>github.com/lumagno/meu-portifolio</a>
             </div>
           </div>
         </div>
