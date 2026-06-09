@@ -20,8 +20,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("PoliticaSegura", policy =>
     {
         policy.WithOrigins(
-                "http://localhost:5173", // Libera o React rodando no seu PC
-                "https://seunome.vercel.app" // Libera o seu site oficial na Vercel futuramente
+                "http://localhost:3000", // Libera o React rodando no seu PC
+                "https://luizmagnagnagno.workers.dev" // Libera o seu site oficial na Vercel futuramente
               )
               .AllowAnyHeader()
               .AllowAnyMethod(); // Permite GET, POST, etc.

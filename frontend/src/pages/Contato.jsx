@@ -10,18 +10,17 @@ export function Contato() {
   const [enviadoComSucesso, setEnviadoComSucesso] = useState(false);
 
   // COLOQUE O SEU LINK DO FORMSPREE AQUI EM BAIXO
-  const FORMSPREE_URL = "https://formspree.io/f/SEU_CODIGO_AQUI"; 
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'; 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setEnviando(true);
 
     try {
-      const resposta = await fetch(FORMSPREE_URL, {
+      const resposta = await fetch(`${apiUrl}/api/contato/cadastrar`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           nome: nome,

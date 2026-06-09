@@ -1,7 +1,8 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { ProjetoCard } from '../components/ProjetoCard';
 
 export function Projetos() {
+  // O estado inicial mantém os seus projetos para garantir que a tela não fica vazia
   const [projetos, setProjetos] = useState([
     {
       id: 1,
@@ -26,16 +27,41 @@ export function Projetos() {
       tecnologias: "PHP 8+, MVC, DAL",
       linkRepo: "https://github.com/lumagno/cash_flow",
       imagemUrl: ""
-    },
-    {/*
-      id: 4,
-      titulo: "Portfólio Full-Stack",
-      descricao: ("Minha vitrine digital desenvolvida do zero, consumindo uma API própria. Interface focada em componentização, hooks e design system moderno escuro."),
-      tecnologias: "React, Vite, CSS, JavaScript",
-      linkRepo: "https://github.com/lumagno/portfolio",
-      imagemUrl: ""
-    */}
+    }
+    // {
+    //   id: 4,
+    //   titulo: "Portfólio Full-Stack",
+    //   descricao: ("Minha vitrine digital desenvolvida do zero, consumindo uma API própria. Interface focada em componentização, hooks e design system moderno escuro."),
+    //   tecnologias: "React, Vite, CSS, JavaScript",
+    //   linkRepo: "https://github.com/lumagno/portfolio",
+    //   imagemUrl: ""
+    // }
   ]);
+
+  // ---> NOVA PARTE: Ligação com a API no Azure <---
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
+  useEffect(() => {
+    async function carregarProjetos() {
+      try {
+        const resposta = await fetch(`${apiUrl}/api/projeto/listar`);
+        if (resposta.ok) {
+          const dadosDoBanco = await resposta.json();
+          // Só substitui os seus cards estáticos se a API devolver projetos (length > 0)
+          if (dadosDoBanco && dadosDoBanco.length > 0) {
+            setProjetos(dadosDoBanco);
+          }
+        }
+      } catch (erro) {
+        // Se a API estiver desligada, ignora o erro silenciosamente e mantém os cards estáticos
+        console.warn("Utilizando projetos estáticos (Backend vazio ou indisponível).");
+      }
+    }
+
+    carregarProjetos();
+  }, [apiUrl]);
+  // ---> FIM DA NOVA PARTE <---
+
 
   // 1. Criamos a "referência" que vai apontar para a caixa dos projetos
   const carrosselRef = useRef(null);
